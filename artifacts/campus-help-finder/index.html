@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A gentle reminder for anyone finding their way through campus life."
+    />
+    <meta name="theme-color" content="#f4f3eb" />
+    <title>Campus Help Finder</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body>
+    <main class="welcome" aria-labelledby="page-title">
+      <div class="welcome__art" aria-hidden="true">
+        <span class="welcome__orbit welcome__orbit--outer"></span>
+        <span class="welcome__orbit welcome__orbit--inner"></span>
+        <span class="welcome__seed"></span>
+      </div>
+
+      <section class="welcome__content">
+        <h1 id="page-title">Campus Help Finder</h1>
+        <p class="welcome__intro">Welcome. Take a breath; you can find your way, one step at a time.</p>
+        <button class="reminder-button" id="reminder-button" type="button" aria-controls="reminder-message" aria-expanded="false">
+          <span>Show me a reminder</span>
+          <span class="reminder-button__arrow" aria-hidden="true">↗</span>
+        </button>
+        <p class="reminder-message" id="reminder-message" role="status" aria-live="polite" aria-atomic="true" hidden>
+          You are not alone
+        </p>
+      </section>
+    </main>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
